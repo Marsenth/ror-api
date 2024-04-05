@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  ror-api:
+    build: ./
+    container_name: ror-api
+    ports:
+      - 5000:5000
+    volumes:
+      - ./:/app
+    command: sleep 36000000
